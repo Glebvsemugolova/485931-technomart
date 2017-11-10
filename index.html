@@ -5,17 +5,21 @@
     <title>HTML Academy: Техномарт</title>
   </head>
   <body>
-    <header class="main-header"><!-- Не знаю как правильно разметить этот блок, нужна помощь -->
-      <div class="header-up">
+    <header class="main-header"><!-- Не знаю правильно ли размечен блок? -->
+      <div class="header-top">
+        <h1 class="logo">
+          <a class="button" href="#">ТЕХНОМАРТ</a>
+        </h1>
+        <div class="search"><!-- Здесь будет форма -->
+          Поиск:
+        </div>
         <ul class="navigation-first">
-          <li class="logo"><a class="button" href="#">ТЕХНОМАРТ</a></li>
-          <li>Поиск:</li>
           <li><a href="#">Закладки</a></li>
           <li><a href="#">Корзина</a></li>
           <li class="checkout"><a href="#">Оформить заказ</a></li>
         </ul>
       </div>
-      <div class="header-down">
+      <div class="header-bottom">
         <p>Интернет-магазин<br>
           строительных материалов<br>
           и инструментов для ремонта</p>
@@ -48,17 +52,17 @@
         <ul class="offers-list">
           <li class="materials">
             <h2>Материалы</h2>
-            <img class="img-cathegory" src="#">
+            <img class="img-cathegory" src="img/icon-1.svg">
             <a class="button-cathegory" href="#">НА ЛЮБОЙ ВКУС</a>
           </li>
           <li class="tools">
             <h2>Инструмент</h2>
-            <img class="img-cathegory" src="#">
+            <img class="img-cathegory" src="img/icon-2.svg">
             <a class="button-cathegory" href="#">НА ВСЕ СЛУЧАИ</a>
           </li>
           <li class="technics">
             <h2>Техника</h2>
-            <img class="img-cathegory" src="#">
+            <img class="img-cathegory" src="img/icon-3.svg">
             <a class="button-cathegory" href="#">ДЛЯ СТРОЙКИ</a>
           </li>
           <li class="slider">
@@ -66,12 +70,12 @@
           </li>
           <li class="sales">
             <h2>Скидки 50%</h2>
-            <img class="img-cathegory" src="#">
+            <img class="img-cathegory" src="img/icon-4.svg.svg">
             <a class="button-cathegory" href="#">НА 350 ТОВАРОВ</a>
           </li>
           <li class="delivery">
             <h2>Доставка</h2>
-            <img class="img-cathegory" src="#">
+            <img class="img-cathegory" src="img/icon-5.svg">
             <a class="button-cathegory" href="#">БЕСПЛАТНО</a>
           </li>
         </ul>
@@ -80,25 +84,41 @@
           <a class="button" href="#">ВСЕ ПОПУЛЯРНЫЕ ТОВАРЫ</a>
           <ul class="popular-catalog-list">
             <li class="popular-catalog-item">
-              <img src="#">
+              <section class="item-actions">
+                <a class="btn buy" href="#">КУПИТЬ</a>
+                <a class="btn in-bookmark" href="#">В ЗАКЛАДКИ</a>
+              </section>
+              <img src="img/snippet-32961%20copy%203.jpg" width="200" height="180" alt="Перфоратор BOSCH BFG 9000">
               <span class="popular-catalog-item-title">Перфоратор BOSCH BFG 9000</span>
               <span class="oldprice">32500 Р.</span>
               <a class="button" href="#">25500 Р.</a>
             </li>
             <li class="popular-catalog-item">
-              <img src="#">
+              <section class="item-actions">
+                <a class="btn buy" href="#">КУПИТЬ</a>
+                <a class="btn in-bookmark" href="#">В ЗАКЛАДКИ</a>
+              </section>
+              <img src="img/snippet-18927%20copy%203.jpg" width="200" height="180" alt="Перфоратор BOSCH BFG 3000">
               <span class="popular-catalog-item-title">Перфоратор BOSCH BFG 3000</span>
               <span class="oldprice">22500 Р.</span>
               <a class="button" href="#">15500 Р.</a>
             </li>
             <li class="popular-catalog-item">
-              <img src="#">
+              <section class="item-actions">
+                <a class="btn buy" href="#">КУПИТЬ</a>
+                <a class="btn in-bookmark" href="#">В ЗАКЛАДКИ</a>
+              </section>
+              <img src="img/snippet-945 copy 2.jpg" width="200" height="180" alt="Перфоратор BOSCH BFG 6000">
               <span class="popular-catalog-item-title">Перфоратор BOSCH BFG 6000</span>
               <span class="oldprice">30500 Р.</span>
               <a class="button" href="#">25500 Р.</a>
             </li>
             <li class="popular-catalog-item">
-              <img src="#">
+              <section class="item-actions">
+                <a class="btn buy" href="#">КУПИТЬ</a>
+                <a class="btn in-bookmark" href="#">В ЗАКЛАДКИ</a>
+              </section>
+              <img src="img/snippet-18927%20copy%203.jpg" width="200" height="180" alt="Перфоратор BOSCH BFG 2000">
               <span class="popular-catalog-item-title">Перфоратор BOSCH BFG 2000</span>
               <span class="oldprice"></span>
               <a class="button" href="#">12500 Р.</a>
@@ -111,14 +131,14 @@
             <a class="button" href="#">ВСЕ ПРОИЗВОДИТЕЛИ</a>
           </p>
           <ul class="popular-firms-list">
-            <li class="popular-firms-item"><a href="#"><img src="#"></a></li>
-            <li class="popular-firms-item"><a href="#"><img src="#"></a></li>
-            <li class="popular-firms-item"><a href="#"><img src="#"></a></li>
-            <li class="popular-firms-item"><a href="#"><img src="#"></a></li>
-            <li class="popular-firms-item"><a href="#"><img src="#"></a></li>
-            <li class="popular-firms-item"><a href="#"><img src="#"></a></li>
-            <li class="popular-firms-item"><a href="#"><img src="#"></a></li>
-            <li class="popular-firms-item"><a href="#"><img src="#"></a></li>
+            <li class="popular-firms-item"><a href="#"><img src="img/bosch.jpg"></a></li>
+            <li class="popular-firms-item"><a href="#"><img src="img/Makita.jpg"></a></li>
+            <li class="popular-firms-item"><a href="#"><img src="img/DeWALT.jpg"></a></li>
+            <li class="popular-firms-item"><a href="#"><img src="img/Интерскол.jpg"></a></li>
+            <li class="popular-firms-item"><a href="#"><img src="img/Hitachi.jpg"></a></li>
+            <li class="popular-firms-item"><a href="#"><img src="img/LG.jpg"></a></li>
+            <li class="popular-firms-item"><a href="#"><img src="img/AEG.jpg"></a></li>
+            <li class="popular-firms-item"><a href="#"><img src="img/Metabo.jpg"></a></li>
           </ul>
         </section>
       </section>
@@ -132,7 +152,7 @@
             <li>Гарантия</li>
             <li>Кредит</li>
           </ul>
-          <section class="service">
+          <section class="delivery">
             <span>Доставка</span>
             <p>Мы с удовольствием доставим ваш товар прямо к<br>
               вашему подъезду совершенно бесплатно!<br>
@@ -164,13 +184,13 @@
           <span>Вы можете забрать товар сами,</span>>
           <span>заехав в наш офис.</span>
         </p>
-        <a class="map" href="#"><img src="#"></a>
+        <a class="map" href="#"><img src="img/Слой%205.jpg"></a>
         <a class="button" href="#">ЗАБЛУДИЛИСЬ? НАПИШИТЕ НАМ!</a>
       </section>
     </main>
     <footer class="main-footer">
-      <div class="footer-up">
-        <section class="footer-up-left">
+      <div class="footer-top">
+        <section class="footer-top-left">
           <h1>
             <a class="button logo-big">ТЕХНОМАРТ</a>
           </h1>
@@ -179,7 +199,7 @@
             <span>+7 (812) 555-05-55</span>
           </p>
         </section>
-        <nav class="footer-up-navigation-first">
+        <nav class="footer-top-navigation-first">
           <ul>
             <li><a href="#">Компания</a></li>
             <li><a href="#">Новости</a></li>
@@ -188,7 +208,7 @@
             <li><a href="#">Контакты</a></li>
           </ul>
         </nav>
-        <nav class="footer-up-navigation-second">
+        <nav class="footer-top-navigation-second">
           <ul>
             <li><a href="#">Материалы</a></li>
             <li><a href="#">Техника</a></li>
@@ -197,7 +217,7 @@
           </ul>
         </nav>
       </div>
-      <div class="footer-down">
+      <div class="footer-bottom">
         <p>
           <span>© 2010-2016 Компания «Техномарт»</span>>
           <span>Все права защищены</span>
