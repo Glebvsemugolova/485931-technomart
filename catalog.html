@@ -24,24 +24,23 @@
       </div>
       <div class="header-bottom">
         <div class="container">
-          <section class="title">
-            <p>Интернет-магазин<br>
-              строительных материалов<br>
-              и инструментов для ремонта</p>
-          </section>
+          <p>
+            Интернет-магазин<br>
+            строительных материалов<br>
+            и инструментов для ремонта
+          </p>
           <section class="contacts">
+            <h2 class="visually-hidden">Контакты</h2>
             <p class="telephone">+7 (812) 555-05-55</p>
             <p class="address">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
           </section>
-          <section class="entrance">
-            <div class="user-block">
-              <a href="#" class="loged">Равшан Джамшутович</a>
-            </div>
+          <div class="user-block">
+            <a href="#" class="loged">Равшан Джамшутович</a>
             <ul class="user-information">
               <li><a href="#">Мои заказы</a></li>
               <li><a href="#">Личный кабинет</a></li>
             </ul>
-          </section>
+          </div>
           <nav class="main-navigation">
             <ul class="site-navigation">
               <li><a href="#">Главная</a></li>
@@ -73,9 +72,11 @@
               <h2>ФИЛЬТР:</h2>
             </div>
             <form  class="filter" method="get" action="https://echo.htmlacademy.ru">
-              <fieldset>
+                
+              <fieldset>    <!-- Сложности с этим филдсетом -->
                 <legend>ЦЕНА:</legend>
               </fieldset>
+                
               <fieldset>
                 <legend>ПРОИЗВОДИТЕЛИ:</legend>
                 <ul>
@@ -152,9 +153,9 @@
                 </li>
               </ul>
             </div>
-            <section class="catalog">
-              <h2 class="vissualy-hidden">Каталог инструментов</h2>
-              <ul class="catalog-list">
+            <section class="full-catalog">
+              <h2 class="visualy-hidden">Каталог инструментов</h2>
+              <ul class="full-catalog-list">
                 <li class="catalog-item">
                   <div class="item-actions">
                     <a class="btn buy" href="#">КУПИТЬ</a>
@@ -299,45 +300,45 @@
               +7 (812) 555-05-55
             </p>
           </div>
-          <nav class="footer-top-nav-first">
-            <ul>
+          <nav class="footer-top-nav">
+            <ul class="nav-first">
               <li><a href="#">Компания</a></li>
               <li><a href="#">Новости</a></li>
               <li><a href="#">Каталог</a></li>
               <li><a href="#">Доставка</a></li>
               <li><a href="#">Контакты</a></li>
             </ul>
-          </nav>
-          <nav class="footer-top-nav-second">
-            <ul>
+            <ul class="nav-second">
               <li><a href="#">Материалы</a></li>
               <li><a href="#">Техника</a></li>
               <li><a href="#">Инструмент</a></li>
               <li><a href="#">Спецпредложения</a></li>
             </ul>
           </nav>
-        </div>
+        </div> 
       </div>
       <div class="footer-bottom">
-        <p>
+        <div class="container">
+          <p>
           © 2010-2016 Компания «Техномарт»<br>
           Все права защищены
-        </p>
-        <section class="social">
-          <ul class="social-list">
-            <li><a href="#" class="social-btn vk">Вконтакте</a></li>
-            <li><a href="#" class="social-btn fb">Facebook</a></li>
-            <li><a href="#" class="social-btn inst">Instagram</a></li>
-          </ul>
-        </section>
-        <section class="feedback">
-          <p>Обратная связь:</p>
-          <a href="#" class="footer-link">mail@htmlacademy.ru</a>
-        </section>
-        <section class="developed-by">
-          <p>Разработано —</p>
-          <a href="#" class="footer-link">htmlacademy.ru</a>
-        </section>
+          </p>
+          <div class="footer-social">
+            <ul>
+              <li><a href="#" class="social-btn vk">Вконтакте</a></li>
+              <li><a href="#" class="social-btn fb">Facebook</a></li>
+              <li><a href="#" class="social-btn inst">Instagram</a></li>
+            </ul>
+          </div>
+          <div class="feedback">
+            <p>Обратная связь:</p>
+            <a href="#" class="footer-link">mail@htmlacademy.ru</a>
+          </div>
+          <div class="developed-by">
+            <p>Разработано —</p>
+            <a href="#" class="footer-link">htmlacademy.ru</a>
+          </div>
+        </div> 
       </div>
     </footer>
     <section class="modal modal-add-product">
