@@ -3,6 +3,10 @@
   <head>
     <meta charset="UTF-8">
     <title>Title</title>
+    <link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700,700i&amp;subset=latin,cyrillic" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,400i,700,700i&amp;subset=latin,cyrillic" rel="stylesheet">
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
     <header class="main-header">
@@ -17,14 +21,14 @@
               <label class="search-label" for="search"></label>
             </form>
           </div>
-          <a class="bookmarks" href="#">Закладки</a>
-          <a class="basket full-basket" href="#">Корзина</a>
+          <a class="bookmarks" href="#">Закладки:</a>
+          <a class="basket full-basket" href="#">Корзина: 10</a>
           <a class="ordering" href="#">Оформить заказ</a>
         </div>
       </div>
       <div class="header-bottom">
         <div class="container">
-          <p>
+          <p class="header-title">
             Интернет-магазин<br>
             строительных материалов<br>
             и инструментов для ремонта
@@ -72,11 +76,11 @@
               <h2>ФИЛЬТР:</h2>
             </div>
             <form  class="filter" method="get" action="https://echo.htmlacademy.ru">
-                
+
               <fieldset>    <!-- Сложности с этим филдсетом -->
                 <legend>ЦЕНА:</legend>
               </fieldset>
-                
+
               <fieldset>
                 <legend>ПРОИЗВОДИТЕЛИ:</legend>
                 <ul>
@@ -134,10 +138,10 @@
           </section>
           <div class="container-right">
             <div class="sorting">
-              <span>Сортировка</span>
+              <span>СОРТИРОВКА:</span>
               <ul class="sorting-list">
-                <li>
-                  <a class="sorting-by-price-active" href="#">ПО ЦЕНЕ</a>
+                <li class=" active">
+                  <a class="sorting-by-price" href="#">ПО ЦЕНЕ</a>
                 </li>
                 <li>
                   <a class="sorting-by-type" href="#">ПО ТИПУ</a>
@@ -158,8 +162,8 @@
               <ul class="full-catalog-list">
                 <li class="catalog-item">
                   <div class="item-actions">
-                    <a class="btn buy" href="#">КУПИТЬ</a>
-                    <a class="btn in-bookmark" href="#">В ЗАКЛАДКИ</a>
+                    <a class="buy" href="#">КУПИТЬ</a>
+                    <a class="in-bookmark" href="#">В ЗАКЛАДКИ</a>
                   </div>
                   <h3>Перфоратор BOSCH BFG 3000</h3>
                   <p class="catalog-item-image">
@@ -170,32 +174,32 @@
                 </li>
                 <li class="catalog-item">
                   <div class="item-actions">
-                    <a class="btn buy" href="#">КУПИТЬ</a>
-                    <a class="btn in-bookmark" href="#">В ЗАКЛАДКИ</a>
+                    <a class="buy" href="#">КУПИТЬ</a>
+                    <a class="in-bookmark" href="#">В ЗАКЛАДКИ</a>
                   </div>
                   <h3>Перфоратор BOSCH BFG 6000</h3>
                   <p class="catalog-item-image">
                     <img src="img/snippet-945 copy 2.jpg" width="200" height="180" alt="Перфоратор BOSCH BFG 6000">
                   </p>
                   <span class="oldprice">30500 Р.</span>
-                  <a class="button" href="#">25500 Р.</a>
+                  <a class="btn" href="#">25500 Р.</a>
                 </li>
                 <li class="catalog-item">
                   <div class="item-actions">
-                    <a class="btn buy" href="#">КУПИТЬ</a>
-                    <a class="btn in-bookmark" href="#">В ЗАКЛАДКИ</a>
+                    <a class="buy" href="#">КУПИТЬ</a>
+                    <a class="in-bookmark" href="#">В ЗАКЛАДКИ</a>
                   </div>
                   <h3>Перфоратор BOSCH BFG 2000</h3>
                   <p class="catalog-item-image">
                     <img src="img/snippet-18927%20copy%203.jpg" width="200" height="180" alt="Перфоратор BOSCH BFG 2000">
                   </p>
                   <span class="oldprice"></span> <!-- empty? -->
-                  <a class="button" href="#">12500 Р.</a>
+                  <a class="btn" href="#">12500 Р.</a>
                 </li>
                 <li class="catalog-item">
                   <div class="item-actions">
-                    <a class="btn buy" href="#">КУПИТЬ</a>
-                    <a class="btn in-bookmark" href="#">В ЗАКЛАДКИ</a>
+                    <a class="buy" href="#">КУПИТЬ</a>
+                    <a class="in-bookmark" href="#">В ЗАКЛАДКИ</a>
                   </div>
                   <h3>Перфоратор BOSCH BFG 3000</h3>
                   <p class="catalog-item-image">
@@ -206,32 +210,32 @@
                 </li>
                 <li class="catalog-item">
                   <div class="item-actions">
-                    <a class="btn buy" href="#">КУПИТЬ</a>
-                    <a class="btn in-bookmark" href="#">В ЗАКЛАДКИ</a>
+                    <a class="buy" href="#">КУПИТЬ</a>
+                    <a class="in-bookmark" href="#">В ЗАКЛАДКИ</a>
                   </div>
                   <h3>Перфоратор BOSCH BFG 6000</h3>
                   <p class="catalog-item-image">
                     <img src="img/snippet-945 copy 2.jpg" width="200" height="180" alt="Перфоратор BOSCH BFG 6000">
                   </p>
                   <span class="oldprice">30500 Р.</span>
-                  <a class="button" href="#">25500 Р.</a>
+                  <a class="btn" href="#">25500 Р.</a>
                 </li>
                 <li class="catalog-item">
                   <div class="item-actions">
-                    <a class="btn buy" href="#">КУПИТЬ</a>
-                    <a class="btn in-bookmark" href="#">В ЗАКЛАДКИ</a>
+                    <a class="buy" href="#">КУПИТЬ</a>
+                    <a class="in-bookmark" href="#">В ЗАКЛАДКИ</a>
                   </div>
                   <h3>Перфоратор BOSCH BFG 2000</h3>
                   <p class="catalog-item-image">
                     <img src="img/snippet-18927%20copy%203.jpg" width="200" height="180" alt="Перфоратор BOSCH BFG 2000">
                   </p>
                   <span class="oldprice"></span> <!-- empty? -->
-                  <a class="button" href="#">12500 Р.</a>
+                  <a class="btn" href="#">12500 Р.</a>
                 </li>
                 <li class="catalog-item">
                   <div class="item-actions">
-                    <a class="btn buy" href="#">КУПИТЬ</a>
-                    <a class="btn in-bookmark" href="#">В ЗАКЛАДКИ</a>
+                    <a class="buy" href="#">КУПИТЬ</a>
+                    <a class="in-bookmark" href="#">В ЗАКЛАДКИ</a>
                   </div>
                   <h3>Перфоратор BOSCH BFG 3000</h3>
                   <p class="catalog-item-image">
@@ -242,35 +246,35 @@
                 </li>
                 <li class="catalog-item">
                   <div class="item-actions">
-                    <a class="btn buy" href="#">КУПИТЬ</a>
-                    <a class="btn in-bookmark" href="#">В ЗАКЛАДКИ</a>
+                    <a class="buy" href="#">КУПИТЬ</a>
+                    <a class="in-bookmark" href="#">В ЗАКЛАДКИ</a>
                   </div>
                   <h3>Перфоратор BOSCH BFG 6000</h3>
                   <p class="catalog-item-image">
                     <img src="img/snippet-945 copy 2.jpg" width="200" height="180" alt="Перфоратор BOSCH BFG 6000">
                   </p>
                   <span class="oldprice">30500 Р.</span>
-                  <a class="button" href="#">25500 Р.</a>
+                  <a class="btn" href="#">25500 Р.</a>
                 </li>
                 <li class="catalog-item">
                   <div class="item-actions">
-                    <a class="btn buy" href="#">КУПИТЬ</a>
-                    <a class="btn in-bookmark" href="#">В ЗАКЛАДКИ</a>
+                    <a class="buy" href="#">КУПИТЬ</a>
+                    <a class="in-bookmark" href="#">В ЗАКЛАДКИ</a>
                   </div>
                   <h3>Перфоратор BOSCH BFG 2000</h3>
                   <p class="catalog-item-image">
                     <img src="img/snippet-18927%20copy%203.jpg" width="200" height="180" alt="Перфоратор BOSCH BFG 2000">
                   </p>
                   <span class="oldprice"></span> <!-- empty? -->
-                  <a class="button" href="#">12500 Р.</a>
+                  <a class="btn" href="#">12500 Р.</a>
                 </li>
               </ul>
             </section>
-            <ul class="pagination-list">
-              <li class="pagination-item pagination-item-current">1</li>
-              <li class="pagination-item">2</li>
-              <li class="pagination-item">3</li>
-              <li class="pagination-item">СЛЕДУЮЩАЯ</li>
+            <ul class="pagination-list">  <!-- Ссылки нужно вставить -->
+              <li class="pagination-item pagination-item-current"><button type="button">1</button></li>
+              <li class="pagination-item"><button type="button">2</button></li>
+              <li class="pagination-item"><button type="button">3</button></li>
+              <li class="pagination-item"><button type="button">СЛЕДУЮЩАЯ</button></li>
             </ul>
           </div>
         </div>
@@ -315,7 +319,7 @@
               <li><a href="#">Спецпредложения</a></li>
             </ul>
           </nav>
-        </div> 
+        </div>
       </div>
       <div class="footer-bottom">
         <div class="container">
@@ -338,7 +342,7 @@
             <p>Разработано —</p>
             <a href="#" class="footer-link">htmlacademy.ru</a>
           </div>
-        </div> 
+        </div>
       </div>
     </footer>
     <section class="modal modal-add-product">
@@ -346,7 +350,7 @@
       <button type="button" class="modal-close-btn">Закрыть</button>
       <div class="add-product-btns">
         <a href="#" class="btn">ОФОРМИТЬ ЗАКАЗ</a>
-        <a href="#" class="btn white-btn">ПРОДОЛЖИТЬ ПОКУПКИ</a>
+        <a href="#" class="white-btn">ПРОДОЛЖИТЬ ПОКУПКИ</a>
       </div>
     </section>
 
