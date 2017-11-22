@@ -37,9 +37,6 @@ a {
 
 }
 
-.header-top .container {
-  display: flex;
-}
 
 input[type=search] {
     border: none;
@@ -89,6 +86,7 @@ input[type=search]:hover,
 .header-title {
   font-size: 16px;
   line-height: 23px;
+  font-style: italic;
 }
 
 .breadcrumbs a,
@@ -156,7 +154,7 @@ input[type=search]:hover,
 
 
 .user-information a,
-.contacts .address {
+.address {
     font-weight: normal;
     color: #32425c;
     background-color: inherit;
@@ -174,6 +172,7 @@ input[type=search]:hover,
 
 .user-information a:active {
   color: rgba(50, 66, 92, 0.3);
+}
 
 .full-basket {
     background-color: #ee3643
@@ -633,3 +632,45 @@ input[type=search]:hover,
 .white-btn {
   background-color: #fff;
 }
+
+.user-block a:active {
+  color: rgba(0, 0, 0, 0.3);
+
+}
+
+.footer-link:hover {
+  text-decoration: underline;
+}
+
+.footer-link:active {
+  text-decoration: none;
+  color: #ca2c37;
+}
+
+.sorting-list a:hover {
+  border: none;
+  color: #000;
+  text-decoration: underline;
+}
+
+
+.instrument-info-title {
+  font-size: 30px;
+  line-height: 24px;
+  font-weight: normal;
+}
+
+.instrument-info p {
+  font-family: "PT Sans", Arial, sans-serif;
+  font-size: 13px;
+  line-height: 24px;
+  font-weight: normal;
+}
+
+
+
+
+
+
+
+
