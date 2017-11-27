@@ -62,47 +62,76 @@
       <div class="block-top">
         <div class="container">
           <section class="offers">
-            <h2 class="visualy-hidden">Каталог предложений</h2>
-            <ul class="categories-list">
-              <li class="category materials">
-                <h3>Материалы</h3>
-                <img class="category-img" src="img/icon-1.svg" width="44" height="65" alt="Материалы">
-                <a class="category-btn" href="#">НА ЛЮБОЙ ВКУС</a>
-              </li>
-              <li class="category tools">
-                <h3>Инструмент</h3>
-                <img class="category-img" src="img/icon-2.svg" width="75" height="61" alt="Инструмент">
-                <a class="category-btn" href="#">НА ВСЕ СЛУЧАИ</a>
-              <li class="category technics">
-                <h3>Техника</h3>
-                <img class="category-img" src="img/icon-3.svg" width="78" height="62" alt="Техника">
-                <a class="category-btn" href="#">ДЛЯ СТРОЙКИ</a>
-              </li>
-              <li class="slider">
-                <div class="slides">
-                  <div class="slide">
-                    <h2 class="slide-title">ПЕРФОРАТОРЫ</h2>
-                    <span>Настоящие мужские игрушки</span>
-                    <a class="btn" href="#">ОТКРЫТЬ КАТАЛОГ</a>
+            <h2 class="visually-hidden">Каталог предложений</h2>
+            <div class="categories-list">
+              <div class="offers-top">
+                <div class="category materials">
+                  <div>
+                    <h3>Материалы</h3>
+                    <a class="category-btn" href="#">НА ЛЮБОЙ ВКУС</a>
                   </div>
-                  <div class="slide">
-                    <h2 class="slide-title">ДРЕЛИ</h2>
-                    <span>Соседям на радость!</span>
-                    <a class="btn" href="#">ОТКРЫТЬ КАТАЛОГ</a>
+
+                  <img class="category-img" src="img/icon-1.svg" width="44" height="65" alt="Материалы">
+
+                </div>
+                <div class="category tools">
+                  <div>
+                    <h3>Инструмент</h3>
+                    <a class="category-btn" href="#">НА ВСЕ СЛУЧАИ</a>
+                  </div>
+
+                  <img class="category-img" src="img/icon-2.svg" width="75" height="61" alt="Инструмент">
+
+                </div>
+                <div class="category technics">
+                  <div>
+                    <h3>Техника</h3>
+                    <a class="category-btn" href="#">ДЛЯ СТРОЙКИ</a>
+                  </div>
+
+                  <img class="category-img" src="img/icon-3.svg" width="78" height="62" alt="Техника">
+
+                </div>
+              </div>
+              <div class="offers-bottom">
+                <div class="slider">
+                  <div class="slides">
+                    <div class="slide">
+                      <div class="slide-wrapper">
+                        <h2 class="slide-title">ПЕРФОРАТОРЫ</h2>
+                        <span>Настоящие мужские игрушки</span>
+                      </div>
+                      <a class="btn" href="#">ОТКРЫТЬ КАТАЛОГ</a>
+                    </div>
+                    <div class="slide">
+                      <div class="slide-wrapper">
+                        <h2 class="slide-title">ДРЕЛИ</h2>
+                        <span>Соседям на радость!</span>
+                      </div>
+                      <a class="btn" href="#">ОТКРЫТЬ КАТАЛОГ</a>
+                    </div>
                   </div>
                 </div>
-              </li>
-              <li class="category sales">
-                <h3>Скидки 50%</h3>
-                <img class="category-img" src="img/icon-4.svg" width="59" height="72" alt="Скидки">
-                <a class="category-btn" href="#">НА 350 ТОВАРОВ</a>
-              </li>
-              <li class="category delivery">
-                <h3>Доставка</h3>
-                <img class="category-img" src="img/icon-5.svg" width="78" height="63" alt="Доставка">
-                <a class="category-btn" href="#">БЕСПЛАТНО</a>
-              </li>
-            </ul>
+                <div class="offers-bottom-categories">
+                  <div class="category sales">
+                    <div>
+                      <h3>Скидки 50%</h3>
+                      <a class="category-btn" href="#">НА 350 ТОВАРОВ</a>
+                    </div>
+                    <img class="category-img" src="img/icon-4.svg" width="59" height="72" alt="Скидки">
+                  </div>
+                  <div class="category delivery">
+                    <div>
+                      <h3>Доставка</h3>
+                      <a class="category-btn" href="#">БЕСПЛАТНО</a>
+                    </div>
+
+                    <img class="category-img" src="img/icon-5.svg" width="78" height="63" alt="Доставка">
+
+                  </div>
+                </div>
+              </div>
+            </div>
           </section>
           <section class="popular-goods">
             <h2>ПОПУЛЯРНЫЕ ТОВАРЫ</h2>
@@ -121,7 +150,7 @@
                 </div>
                 <span class="item-title">Перфоратор BOSCH BFG 9000</span>
                 <span class="oldprice">32500 Р.</span>
-                <a class="btn" href="#">25500 Р.</a>
+                <a class="price" href="#">25500 Р.</a>
               </li>
               <li class="catalog-item">
                 <div class="item-actions">
@@ -133,7 +162,7 @@
                 </div>
                 <span class="item-title">Перфоратор BOSCH BFG 3000</span>
                 <span class="oldprice">22500 Р.</span>
-                <a class="btn" href="#">15500 Р.</a>
+                <a class="price" href="#">15500 Р.</a>
               </li>
               <li class="catalog-item">
                 <div class="item-actions">
@@ -145,9 +174,10 @@
                 </div>
                 <span class="item-title">Перфоратор BOSCH BFG 6000</span>
                 <span class="oldprice">30500 Р.</span>
-                <a class="btn" href="#">25500 Р.</a>
+                <a class="price" href="#">25500 Р.</a>
               </li>
               <li class="catalog-item">
+                <div class="flag flag-new">новинка</div>
                 <div class="item-actions">
                   <a class="buy" href="#">КУПИТЬ</a>
                   <a class="in-bookmark" href="#">В ЗАКЛАДКИ</a>
@@ -157,7 +187,7 @@
                 </div>
                 <span class="item-title">Перфоратор BOSCH BFG 2000</span>
                 <span class="oldprice"></span>
-                <a class="btn" href="#">12500 Р.</a>
+                <a class="price" href="#">12500 Р.</a>
               </li>
             </ul>
           </section>
@@ -300,13 +330,15 @@
               <li><a href="#" class="social-btn inst">Instagram</a></li>
             </ul>
           </div>
-          <div class="feedback">
-            <p>Обратная связь:</p>
-            <a href="#" class="footer-link">mail@htmlacademy.ru</a>
-          </div>
-          <div class="developed-by">
-            <p>Разработано —</p>
-            <a href="#" class="footer-link">htmlacademy.ru</a>
+          <div class="footer-bottom-right">
+            <div class="feedback">
+              <p>Обратная связь:</p>
+              <a href="#" class="footer-link">mail@htmlacademy.ru</a>
+            </div>
+            <div class="developed-by">
+              <p>Разработано —</p>
+              <a href="#" class="footer-link">htmlacademy.ru</a>
+            </div>
           </div>
         </div>
       </div>
@@ -320,7 +352,7 @@
       </div>
     </section>
   <section class="modal modal-write-us">
-    <h2 class="vissualy-hidden">Напишите нам</h2>
+    <h2 class="visually-hidden">Напишите нам</h2>
     <button type="button" class="modal-close-btn">Закрыть</button>
     <form class="write-us-form" action="https://echo.htmlacademy.ru" method="post">
       <label class="modal-label">
