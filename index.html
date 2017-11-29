@@ -8,7 +8,7 @@
     <link href="css/normalize.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
   </head>
-  <body class="inner-page">
+  <body>
     <header class="main-header">
       <div class="header-top">
         <div class="container">
@@ -21,7 +21,7 @@
               <label class="search-label" for="search"></label>
             </form>
           </div>
-          <a class="bookmarks" href="#">Закладки:</a>
+          <a class="bookmarks" href="#">Закладки: 0</a>
           <a class="basket" href="#">Корзина: 0</a>
           <a class="ordering" href="#">Оформить заказ</a>
         </div>
@@ -66,6 +66,7 @@
             <div class="categories-list">
               <div class="offers-top">
                 <div class="category materials">
+                  <div class="flag flag-new">новинка</div>
                   <div>
                     <h3>Материалы</h3>
                     <a class="category-btn" href="#">НА ЛЮБОЙ ВКУС</a>
@@ -218,7 +219,7 @@
               Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.</p>
             <div class="service-block">
               <ul class="service-nav">
-                <li><button type="button" class="service-btn">Доставка</button></li>
+                <li><button type="button" class="service-btn checked">Доставка</button></li>
                 <li><button type="button" class="service-btn">Гарантия</button></li>
                 <li><button type="button" class="service-btn">Кредит</button></li>
               </ul>
@@ -325,9 +326,9 @@
           </p>
           <div class="footer-social">
             <ul>
-              <li><a href="#" class="social-btn vk">Вконтакте</a></li>
-              <li><a href="#" class="social-btn fb">Facebook</a></li>
-              <li><a href="#" class="social-btn inst">Instagram</a></li>
+              <li><a href="#" class="social-btn vk"></a></li>
+              <li><a href="#" class="social-btn fb"></a></li>
+              <li><a href="#" class="social-btn inst"></a></li>
             </ul>
           </div>
           <div class="footer-bottom-right">
@@ -345,7 +346,7 @@
     </footer>
     <section class="modal modal-add-product">
       <h2>Товар добавлен в корзину!</h2>
-      <button type="button" class="modal-close-btn">Закрыть</button>
+      <button type="button" class="modal-close">Закрыть</button>
       <div class="add-product-btns">
         <a href="#" class="btn">ОФОРМИТЬ ЗАКАЗ</a>
         <a href="#" class="white-btn">ПРОДОЛЖИТЬ ПОКУПКИ</a>
@@ -353,26 +354,33 @@
     </section>
   <section class="modal modal-write-us">
     <h2 class="visually-hidden">Напишите нам</h2>
-    <button type="button" class="modal-close-btn">Закрыть</button>
+    <button type="button" class="modal-close">Закрыть</button>
     <form class="write-us-form" action="https://echo.htmlacademy.ru" method="post">
-      <label class="modal-label">
-        Ваше имя:
-        <input type="text" name="name" placeholder="Представьтесь, пожалуйста">
-      </label>
-      <label class="modal-label">
-        Ваш e-mail:
-        <input type="email" name="email" placeholder="Для отправки ответа">
-      </label>
-      <label class="modal-label">
-        Текст письма:
-        <textarea name="text" placeholder="В свободной форме"></textarea>
-      </label>
-      <div class="write-us-btns">
+      <fieldset>
+        <p>
+          <label class="modal-label" for="name">Ваше имя:</label>
+        </p>
+        <input type="text" id="name" name="name" placeholder="Представьтесь, пожалуйста">
+      </fieldset>
+      <fieldset>
+        <p>
+          <label class="modal-label" for="">Ваш e-mail:</label>
+        </p>
+        <input type="email" id="email" name="email" placeholder="Для отправки ответа">
+      </fieldset>
+      <fieldset>
+        <p>
+          <label class="modal-label" for="letter">Текст письма:</label>
+        </p>
+        <textarea name="text" id="letter" placeholder="В свободной форме"></textarea>
+      </fieldset>
+    </form>
+    <div class="write-us-btns">
         <button type="submit" class="btn">ОТПРАВИТЬ</button>
       </div>
-    </form>
+
   </section>
-  <div class="modal modal-map">
+  <div class="popup modal-map">
     <button class="modal-close-btn" type="button">Закрыть</button>
   </div>
 
