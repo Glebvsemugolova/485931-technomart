@@ -1,3 +1,5 @@
+
+
 body {
   margin: 0;
   padding: 0;
@@ -139,7 +141,7 @@ input[type=search]:focus {
 }
 
 .block-up {
-  padding-top: 22px;
+  padding-top: 21px;
 }
 
 .breadcrumbs {
@@ -154,7 +156,11 @@ input[type=search]:focus {
 }
 
 .breadcrumbs li {
-  margin-right: 41px;
+  margin-right: 40px;
+}
+
+.breadcrumbs-current {
+  margin-left: 2px;
 }
 
 .breadcrumbs a,
@@ -282,7 +288,7 @@ input[type=search]:focus {
 .user-information {
   display: flex;
   margin: 0;
-  margin-top: 7px;
+  margin-top: 9px;
   padding: 0;
 }
 
@@ -310,8 +316,8 @@ input[type=search]:focus {
 .full-basket {
   position: relative;
 
-  padding-top: 12px;
-  padding-bottom: 12px;
+  padding-top: 13px;
+  padding-bottom: 11px;
   padding-left: 49px;
   padding-right: 26px;
 
@@ -395,6 +401,7 @@ input[type=search]:focus {
 
 .materials img {
   margin-top: 8px;
+  margin-left: auto;
 }
 
 .tools {
@@ -512,7 +519,6 @@ input[type=search]:focus {
 
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
   margin: 0;
   width: 620px;
   min-height: 266px;
@@ -558,6 +564,7 @@ input[type=search]:focus {
   padding-bottom: 10px;
   padding-top: 11px;
   padding-left: 3px;
+  margin-top: 121px;
 }
 
 .service-delivery {
@@ -591,7 +598,7 @@ input[type=search]:focus {
   padding-left: 28px;
   padding-right: 24px;
   padding-top: 25px;
-  padding-bottom: 26px;
+  padding-bottom: 27px;
 
   background-color: #f9f5f0;
 }
@@ -662,13 +669,13 @@ input[type=search]:focus {
 }
 
 .footer-top {
-  padding-bottom: 31px;
+  padding-bottom: 32px;
 
   background-color: #32425c;
 }
 
 .footer-bottom {
-  padding-top: 36px;
+  padding-top: 34px;
   padding-bottom: 31px;
 
   font-size: 16px;
@@ -678,7 +685,8 @@ input[type=search]:focus {
 
 .footer-bottom p {
   margin: 0;
-  padding-left: 2px;
+  padding-left: 1px;
+  margin-top: 4px;
 }
 
 .category h3 {
@@ -733,7 +741,7 @@ input[type=search]:focus {
   position: relative;
 
   display: inline-block;
-  width:218px;
+  width: 218px;
 
   font-family: "PT Sans", Arial, sans-serif;
   font-weight: 700;
@@ -774,7 +782,7 @@ input[type=search]:focus {
 
 .service p {
   font-family: "PT Sans", Arial, sans-serif;
-  margin-top: 29px;
+  margin-top: 28px;
 }
 
 .service-btn {
@@ -815,13 +823,13 @@ input[type=search]:focus {
 
 .second-pharagraph {
   padding: 0;
-  padding-top: 10px;
+  padding-top: 12px;
 }
 
 .transport-company {
   padding: 0;
-  margin-bottom: 37px;
-  margin-top: 20px;
+  margin-bottom: 38px;
+  margin-top: 21px;
 
   font-size: 18px;
   line-height: 20px;
@@ -933,7 +941,7 @@ input[type=search]:focus {
 .sorting a {
   color: rgba(0, 0, 0, 0.3);
 
-  border-bottom: 1px dashed #ee3643;
+  border-bottom: 1px dotted #ee3643;
 }
 
 .active a  {
@@ -1045,8 +1053,8 @@ input[type=search]:focus {
 
 .block-down {
   margin-top: 59px;
-  padding-top: 68px;
-  padding-bottom: 69px;
+  padding-top: 70px;
+  padding-bottom: 70px;
 
   color: #000000;
 
@@ -1568,6 +1576,11 @@ input[type=search]::-webkit-input-placeholder {
   font-size: 17px;
 }
 
+input::-moz-placeholder {
+   color: #ffffff;
+   opacity: 1;
+ }
+
 .header-bottom .container {
   padding-top: 48px;
   padding-bottom: 58px;
@@ -1605,7 +1618,7 @@ input[type=search]::-webkit-input-placeholder {
 
 .block-top {
   display: flex;
-  padding-bottom: 65px ;
+  padding-bottom: 66px ;
 }
 
 .catalog-list {
@@ -1646,15 +1659,13 @@ input[type=search]::-webkit-input-placeholder {
   min-height: 40px;
   padding: 0 25px;
   margin-top: 10px;
-  margin-bottom: 15px;
+  margin-bottom: 13px;
 }
 
 .catalog-item .oldprice {
   display: block;
   min-height: 20px;
-  margin-top: 15px;
-  margin-bottom: 5px;
-  padding-left: 5px;
+  padding-left: 4px;
 }
 
 .catalog-item .price {
@@ -1662,8 +1673,9 @@ input[type=search]::-webkit-input-placeholder {
 
   display: block;
   width: 80px;
-  margin: 5px auto;
+  margin: 0 auto;
   margin-bottom: 20px;
+  margin-top: 8px;
   padding: 10px 0;
   padding-left: 29px;
   padding-right: 25px;
@@ -1679,7 +1691,7 @@ input[type=search]::-webkit-input-placeholder {
 
   position: absolute;
   top: 0;
-  right: -25px;
+  right: -27px;
 
   width:0;
   height:0;
@@ -1785,14 +1797,20 @@ input[type="radio"].visually-hidden {
   width: 195px;
 }
 
+.page p {
+  margin-top: 31px;
+}
+
 .about-company .btn {
   display: block;
   width: 220px;
+  padding-left: 1px;
 }
 
 .contacts .btn {
   display: block;
   width: 300px;
+  padding-left: 7px;
 }
 
 .firms-list {
@@ -1807,7 +1825,7 @@ input[type="radio"].visually-hidden {
 .service-block {
   position: relative;
 
-  margin-top: 69px;
+  margin-top: 70px;
   width: 940px;
   display: flex;
   flex-wrap: wrap;
@@ -1847,12 +1865,12 @@ input[type="radio"].visually-hidden {
   margin: 0;
   padding: 0;
   width: 619px;
-  margin-left: 80px;
+  margin-left: 81px;
 }
 
 .block-bottom {
   padding-top: 82px;
-  padding-bottom: 86px;
+  padding-bottom: 85px;
 
   color: #000000;
 }
@@ -1880,7 +1898,7 @@ input[type="radio"].visually-hidden {
 }
 
 .nav-first {
-  margin-top: 37px;
+  margin-top: 38px;
   margin-bottom: 34px;
   margin-left: 3px;
   display: flex;
@@ -1899,11 +1917,11 @@ input[type="radio"].visually-hidden {
 }
 
 .developed-by {
-  margin-right: 16px;
+  margin-right: 14px;
 }
 
 .feedback {
-  margin-left: 3px;
+  margin-left: 6px;
 }
 
 .footer-social ul {
@@ -1913,7 +1931,7 @@ input[type="radio"].visually-hidden {
   justify-content: center;
   width: 380px;
   box-sizing: border-box;
-  padding-left: 51px;
+  padding-left: 55px;
 }
 
 .footer-social li {
@@ -1928,8 +1946,8 @@ input[type="radio"].visually-hidden {
 
 .map {
   display: block;
-  margin-top: 30px;
-  margin-bottom: 36px;
+  margin-top: 32px;
+  margin-bottom: 37px;
 }
 
 .flex-wrapper {
@@ -1950,6 +1968,7 @@ input[type="radio"].visually-hidden {
   align-items: center;
   padding-right: 17px;
   padding-left: 120px;
+  padding-bottom: 2px;
 }
 
 .sorting-by-type {
@@ -2028,14 +2047,15 @@ input[type="radio"].visually-hidden {
   position: relative;
 
   height: 41px;
-  margin-bottom: 10px;
+  margin-bottom: 8px;
   padding-top: 39px;
   padding-right: 20px;
   padding-left: 20px;
 
   background-color: #f7f3ec;
 
-  border-radius: 5px;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
 }
 
 .range-controls .scale {
@@ -2053,7 +2073,7 @@ input[type="radio"].visually-hidden {
 
 .range-controls .toggle {
   position: absolute;
-  top: 31px;
+  top: 29px;
   left: 0;
 
   width: 4px;
@@ -2068,7 +2088,7 @@ input[type="radio"].visually-hidden {
 }
 
 .range-controls .toggle-min {
-  left: 18px;
+  left: 20px;
 }
 
 .range-controls .toggle-max {
@@ -2098,10 +2118,11 @@ input[type="radio"].visually-hidden {
 }
 
 .filter-btn {
-  padding: 9px 0;
+  padding-left: 5px;
+  padding-top: 8px;
+  padding-bottom: 9px;
   width: 140px;
   margin-top: 42px;
-  margin-left: 2px;
 
   font-family: "PT Sans", Arial, sans-serif;
   font-size: 13px;
@@ -2110,7 +2131,7 @@ input[type="radio"].visually-hidden {
 
   background-color: #ffffff;
   border: none;
-  border: 2px solid #e5e5e5;
+  border: 1px solid #e5e5e5;
 }
 
 .home {
@@ -2154,11 +2175,14 @@ input[type="radio"].visually-hidden {
 
 .fieldset-prise legend {
   margin: 0;
+  padding-top: 2px;
 }
 
 .price-controls input {
   width: 95px;
-  padding: 10px 0;
+  padding-top: 9px;
+  padding-bottom: 11px;
+  box-sizing: border-box;
 
   font-family: "PT Sans", Arial, sans-serif;
   font-size: 17px;
@@ -2174,8 +2198,17 @@ input[type="radio"].visually-hidden {
   margin-right: 30px;
 }
 
+.min-price input {
+  padding-left: 7px;
+}
+
+.max-price input {
+  padding-left: 3px;
+}
+
 .filter fieldset {
   padding: 0;
+  margin: 0;
 
   margin-bottom: 15px;
 
@@ -2184,6 +2217,8 @@ input[type="radio"].visually-hidden {
 }
 
 .filter fieldset:last-of-type {
+  margin-top: 16px;
+
   border: none;
 }
 
@@ -2208,7 +2243,7 @@ input[type="radio"].visually-hidden {
 
   position: absolute;
   left: -34px;
-  top: -2px;
+  top: -1px;
 
   width: 27px;
   height: 23px;
@@ -2223,7 +2258,7 @@ input[type="radio"].visually-hidden {
 
   position: absolute;
   left: -34px;
-  top: -2px;
+  top: -1px;
 
   width: 27px;
   height: 23px;
@@ -2316,8 +2351,8 @@ input[type="radio"].visually-hidden {
 
   position: absolute;
   z-index: 20;
-  top: 18px;
-  left: 105px;
+  top: 19px;
+  left: 106px;
 
   display: block;
   width: 10px;
@@ -2370,3 +2405,6 @@ input[type="radio"].visually-hidden {
   border-radius: 50px;
 }
 
+.add-product-active {
+  display: block;
+}

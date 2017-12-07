@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Техномарт</title>
-    <link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700|PT+Sans:400,700&amp;subset=latin,cyrillic" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700%7CPT+Sans:400,700&amp;subset=latin,cyrillic" rel="stylesheet">
     <link href="css/normalize.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
   </head>
@@ -379,23 +379,7 @@
   <div class="popup modal-map">
     <button class="modal-close" type="button">Закрыть</button>
   </div>
-  <script>
-    var  link  = document.querySelector(".enter-write-us");
-    var popup = document.querySelector(".modal-write-us");
-    var close = document.querySelector(".close-write-us");
+  <script src="js/script.js" type="text/javascript"></script>
 
-    link.addEventListener("click",function (evt) {
-      evt.preventDefault();
-      popup.classList.add("write-us-active");
-
-    });
-
-    close.addEventListener("click",function (evt2) {
-      evt2.preventDefault();
-      popup.classList.remove("write-us-active");
-
-    });
-
-  </script>
-  </body>
+    </body>
 </html>
