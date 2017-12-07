@@ -76,6 +76,11 @@ input[type=search]:focus {
   outline: none;
 }
 
+input[type=search]:focus + .search-label {
+  background-image: url(../img/icon-search-red.svg);
+  opacity: 1;
+}
+
 .header-bottom {
   display: flex;
   margin: 0;

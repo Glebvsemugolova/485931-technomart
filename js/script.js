@@ -13,3 +13,13 @@ close.addEventListener("click",function (evt2) {
   popup.classList.remove("write-us-active");
 
 });
+
+var  linkbuy = document.querySelectorAll(".buy");
+var modal = document.querySelector(".modal-add-product");
+var closemodal = document.querySelector(".modal-close");
+
+linkbuy.addEventListener("click",function (evt3) {
+  evt3.preventDefault();
+  modal.classList.add("add-product-active");
+
+});
