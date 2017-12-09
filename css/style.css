@@ -1,4 +1,63 @@
+@font-face {
+  font-family: 'Cuprum';
+  src: url('../fonts/web/cuprum.woff2') format('woff2'),
+  url('../fonts/web/cuprum.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
 
+@font-face {
+  font-family: 'Cuprum';
+  src: url('../fonts/web/cuprumbold.woff2') format('woff2'),
+  url('../fonts/web/cuprumbold.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Cuprum';
+  src: url('../fonts/web/cuprumbolditalic.woff2') format('woff2'),
+  url('../fonts/web/cuprumbolditalic.woff') format('woff');
+  font-weight: bold;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Cuprum';
+  src: url('../fonts/web/cuprumitalic.woff2') format('woff2'),
+  url('../fonts/web/cuprumitalic.woff') format('woff');
+  font-weight: normal;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'PT Sans';
+  src: url('../fonts/web/ptsans.woff2') format('woff2'),
+  url('../fonts/web/ptsans.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'PT Sans';
+  src: url('../fonts/web/ptsansbold.woff2') format('woff2'),
+  url('../fonts/web/ptsansbold.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@keyframes bounce {
+  0%   { transform: translateY(-2000px); }
+  70%  { transform: translateY(30px);    }
+  90%  { transform: translateY(-10px);   }
+  100% { transform: translateY(0);       }
+}
+
+@keyframes shake {
+  0%, 100%                { transform: translateX(0);     }
+  10%, 30%, 50%, 70%, 90% { transform: translateX(-10px); }
+  20%, 40%, 60%, 80%      { transform: translateX(10px);  }
+}
 
 body {
   margin: 0;
@@ -236,8 +295,7 @@ input[type=search]:focus + .search-label {
 }
 
 
-.site-navigation a:hover,
-.site-navigation a:focus {
+.site-navigation a:hover {
   background-color: #293449;
 }
 
@@ -248,6 +306,7 @@ input[type=search]:focus + .search-label {
 }
 
 .logo {
+  display: inline-block;
   width: 220px;
   margin: 0;
   padding-top: 11px;
@@ -257,6 +316,7 @@ input[type=search]:focus + .search-label {
   line-height: 24px;
   font-weight: 400;
   text-align: center;
+  vertical-align: middle;
 
   background-color: #ee3643;
   box-shadow: 0 5px 0 0 #9a212a;
@@ -750,9 +810,10 @@ input[type=search]:focus + .search-label {
 
   font-family: "PT Sans", Arial, sans-serif;
   font-weight: 700;
-  text-align:center;
+  text-align: center;
+  vertical-align: middle;
 
-  border:1px solid #cccccc;
+  border: 1px solid #cccccc;
 }
 
 .item-title {
@@ -1034,6 +1095,8 @@ input[type=search]:focus + .search-label {
   background: #ffffff;
   border: 1px solid #e5e5e5;
   border-radius: 3px;
+
+  cursor: pointer;
 }
 
 .pagination-item.text button {
@@ -1073,16 +1136,12 @@ input[type=search]:focus + .search-label {
 }
 
 .credit {
-  display: none;
-
   background-image: url("../img/credit-bg.png");
   background-repeat: no-repeat;
   background-position: right bottom;
 }
 
 .guarantee {
-  display: none;
-
   background-image: url("../img/guarantee.png");
   background-repeat: no-repeat;
   background-position: right bottom;
@@ -1094,6 +1153,8 @@ input[type=search]:focus + .search-label {
 
   width: 42px;
   height: 42px;
+
+  vertical-align: middle;
 
   background-position: center;
   background-color: #212a3a;
@@ -1122,7 +1183,7 @@ input[type=search]:focus + .search-label {
 }
 
 .modal-add-product {
-  bottom: 10px;
+  top: 150px;
   left: 50%;
 
   display: none;
@@ -1160,6 +1221,7 @@ input[type=search]:focus + .search-label {
 
 .modal {
   position: fixed;
+  z-index: 100;
 
   color: #000000;
 
@@ -1168,7 +1230,7 @@ input[type=search]:focus + .search-label {
 }
 
 .modal-write-us {
-  bottom: 10px;
+  bottom: 100px;
   left: 50%;
 
   display: none;
@@ -1655,7 +1717,7 @@ input::-moz-placeholder {
   width:218px;
   height:168px;
 }
-.catalog-item .item-img img{
+.catalog-item img{
   max-width:100%;
 }
 
@@ -1670,7 +1732,7 @@ input::-moz-placeholder {
 .catalog-item .oldprice {
   display: block;
   min-height: 20px;
-  padding-left: 4px;
+  padding-left: 2px;
 }
 
 .catalog-item .price {
@@ -1816,6 +1878,7 @@ input[type="radio"].visually-hidden {
   display: block;
   width: 300px;
   padding-left: 7px;
+  box-sizing: border-box;
 }
 
 .firms-list {
@@ -1866,6 +1929,7 @@ input[type="radio"].visually-hidden {
   top: 5px;
   left: 0;
 
+  display: none;
   min-height: 280px;
   margin: 0;
   padding: 0;
@@ -1971,7 +2035,6 @@ input[type="radio"].visually-hidden {
   padding: 0;
   display: flex;
   align-items: center;
-  padding-right: 17px;
   padding-left: 120px;
   padding-bottom: 2px;
 }
@@ -2112,6 +2175,7 @@ input[type="radio"].visually-hidden {
 
   font-size: 16px;
   text-transform: uppercase;
+  vertical-align: middle;
 }
 
 .filter legend {
@@ -2203,11 +2267,11 @@ input[type="radio"].visually-hidden {
   margin-right: 30px;
 }
 
-.min-price input {
+.price-controls input:first-child {
   padding-left: 7px;
 }
 
-.max-price input {
+.price-controls input:last-of-type {
   padding-left: 3px;
 }
 
@@ -2308,6 +2372,7 @@ input[type="radio"].visually-hidden {
   color: #32425c;
 
   background-color: #fff;
+  border: 1px solid #ffffff;
 }
 
 .service-btn.checked:hover,
@@ -2319,6 +2384,8 @@ input[type="radio"].visually-hidden {
 
 .write-us-active {
   display: block;
+  animation-name: bounce;
+  animation-duration: 0.7s;
 }
 
 .modal-map {
@@ -2392,7 +2459,7 @@ input[type="radio"].visually-hidden {
   cursor: pointer;
 }
 
-.slider-control label:first-child {
+.slider-control .red-dot {
   background-color: red;
 }
 
@@ -2410,6 +2477,29 @@ input[type="radio"].visually-hidden {
   border-radius: 50px;
 }
 
+.modal-map-active {
+  display: block;
+}
+
+.slide-passive {
+  display: none;
+}
+
 .add-product-active {
   display: block;
+  animation-name: bounce;
+  animation-duration: 0.7s;
+}
+
+.modal-label {
+  display: block;
+}
+
+.page.page-active {
+  display: block;
+}
+
+.modal-error {
+  animation-name: shake;
+  animation-duration: 0.7s;
 }
