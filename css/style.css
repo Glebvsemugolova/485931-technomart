@@ -1,22 +1,22 @@
 @font-face {
   font-family: 'Cuprum';
-  src: url('../fonts/web/cuprum.woff2') format('woff2'),
-  url('../fonts/web/cuprum.woff') format('woff');
+  src: url('../fonts/cuprum.woff2') format('woff2'),
+  url('../fonts/cuprum.woff') format('woff');
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'Cuprum';
-  src: url('../fonts/web/cuprumbold.woff2') format('woff2'),
-  url('../fonts/web/cuprumbold.woff') format('woff');
+  src: url('../fonts/cuprumbold.woff2') format('woff2'),
+  url('../fonts/cuprumbold.woff') format('woff');
   font-weight: bold;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'Cuprum';
-  src: url('../fonts/web/cuprumbolditalic.woff2') format('woff2'),
+  src: url('../fonts/cuprumbolditalic.woff2') format('woff2'),
   url('../fonts/web/cuprumbolditalic.woff') format('woff');
   font-weight: bold;
   font-style: italic;
@@ -24,24 +24,24 @@
 
 @font-face {
   font-family: 'Cuprum';
-  src: url('../fonts/web/cuprumitalic.woff2') format('woff2'),
-  url('../fonts/web/cuprumitalic.woff') format('woff');
+  src: url('../fonts/cuprumitalic.woff2') format('woff2'),
+  url('../fonts/cuprumitalic.woff') format('woff');
   font-weight: normal;
   font-style: italic;
 }
 
 @font-face {
   font-family: 'PT Sans';
-  src: url('../fonts/web/ptsans.woff2') format('woff2'),
-  url('../fonts/web/ptsans.woff') format('woff');
+  src: url('../fonts/ptsans.woff2') format('woff2'),
+  url('../fonts/ptsans.woff') format('woff');
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'PT Sans';
-  src: url('../fonts/web/ptsansbold.woff2') format('woff2'),
-  url('../fonts/web/ptsansbold.woff') format('woff');
+  src: url('../fonts/ptsansbold.woff2') format('woff2'),
+  url('../fonts/ptsansbold.woff') format('woff');
   font-weight: bold;
   font-style: normal;
 }
@@ -153,7 +153,7 @@ input[type=search]:focus + .search-label {
 .telephone {
   position: relative;
 
-  padding: 9px 48px 11px 72px;
+  padding: 10px 48px 10px 72px;
   margin: 0;
 
   color: #e9292a;
@@ -197,6 +197,7 @@ input[type=search]:focus + .search-label {
   margin: 0;
   margin-left: 52px;
   margin-right: 71px;
+  margin-top: 2px;
 
   font-size: 16px;
   line-height: 23px;
@@ -212,7 +213,7 @@ input[type=search]:focus + .search-label {
   display: flex;
   margin: 0;
   padding: 0;
-  margin-bottom: 20px;
+  margin-bottom: 19px;
 
   font-family: "PT Sans", Arial, sans-serif;
   font-size: 13px;
@@ -353,7 +354,8 @@ input[type=search]:focus + .search-label {
 .user-information {
   display: flex;
   margin: 0;
-  margin-top: 9px;
+  margin-top: 8px;
+  margin-left: -1px;
   padding: 0;
 }
 
@@ -381,7 +383,7 @@ input[type=search]:focus + .search-label {
 .full-basket {
   position: relative;
 
-  padding-top: 13px;
+  padding-top: 12px;
   padding-bottom: 11px;
   padding-left: 49px;
   padding-right: 26px;
@@ -408,7 +410,7 @@ input[type=search]:focus + .search-label {
 
 .ordering {
   padding: 0 21px;
-  padding-top: 13px;
+  padding-top: 12px;
   padding-bottom: 11px;
 
   background-color: #63a63e;
@@ -440,13 +442,17 @@ input[type=search]:focus + .search-label {
   padding-top: 12px;
   padding-bottom: 9px;
   width: 135px;
-  margin-left: 2px;
 
   text-align: center;
   font-size: 14px;
 
   background: rgba(0,0,0,.1);
   border-radius: 3px;
+}
+
+.materials .category-btn,
+.tools .category-btn {
+  margin-left: 2px;
 }
 
 .category-btn:hover,
@@ -594,9 +600,11 @@ input[type=search]:focus + .search-label {
 }
 
 .slide:nth-child(1) {
+  padding-top: 26px;
+  padding-left: 24px;
+
   background-image: url("../img/slide-1.jpg");
   background-repeat: no-repeat;
-
 }
 
 .slide:nth-child(2) {
@@ -613,7 +621,11 @@ input[type=search]:focus + .search-label {
 
 .slide-title {
   margin: 0;
-  margin-bottom: 6px;
+  margin-bottom: 4px;
+}
+
+.slide-wrapper span {
+  margin-left: 1px;
 }
 
 .slide span {
@@ -628,8 +640,9 @@ input[type=search]:focus + .search-label {
   width: 195px;
   padding-bottom: 10px;
   padding-top: 11px;
-  padding-left: 3px;
-  margin-top: 121px;
+  padding-left: 5px;
+  margin-top: 122px;
+  box-sizing: border-box;
 }
 
 .service-delivery {
@@ -679,7 +692,7 @@ input[type=search]:focus + .search-label {
 }
 
 .page-title {
-  margin-bottom: 20px;
+  margin-bottom: 19px;
 
   background-color: #f2f6f8;
 }
@@ -734,14 +747,14 @@ input[type=search]:focus + .search-label {
 }
 
 .footer-top {
-  padding-bottom: 32px;
+  padding-bottom: 31px;
 
   background-color: #32425c;
 }
 
 .footer-bottom {
-  padding-top: 34px;
-  padding-bottom: 31px;
+  padding-top: 33px;
+  padding-bottom: 32px;
 
   font-size: 16px;
 
@@ -750,7 +763,6 @@ input[type=search]:focus + .search-label {
 
 .footer-bottom p {
   margin: 0;
-  padding-left: 1px;
   margin-top: 4px;
 }
 
@@ -783,6 +795,10 @@ input[type=search]:focus + .search-label {
 
 .btn:hover,
 .btn:focus {
+  background-color: #ca2c37;
+}
+
+.contacts .btn:focus {
   background-color: #ca2c37;
 }
 
@@ -846,9 +862,12 @@ input[type=search]:focus + .search-label {
   color: #32425c;
 }
 
+.service .service-title {
+  margin-top: 29px;
+}
+
 .service p {
   font-family: "PT Sans", Arial, sans-serif;
-  margin-top: 28px;
 }
 
 .service-btn {
@@ -873,7 +892,7 @@ input[type=search]:focus + .search-label {
 .contacts h2 {
   margin: 0;
   padding: 0;
-  margin-bottom: 30px;
+  margin-bottom: 29px;
 
   font-weight: normal;
   font-size: 30px;
@@ -894,8 +913,8 @@ input[type=search]:focus + .search-label {
 
 .transport-company {
   padding: 0;
-  margin-bottom: 38px;
-  margin-top: 21px;
+  margin-bottom: 37px;
+  margin-top: 20px;
 
   font-size: 18px;
   line-height: 20px;
@@ -945,7 +964,7 @@ input[type=search]:focus + .search-label {
 }
 
 .footer-top-left p {
-  padding-left: 3px;
+  padding-left: 4px;
 
   color: #f3f7f9;
   font-size: 18px;
@@ -1122,7 +1141,7 @@ input[type=search]:focus + .search-label {
 .block-down {
   margin-top: 59px;
   padding-top: 70px;
-  padding-bottom: 70px;
+  padding-bottom: 68px;
 
   color: #000000;
 
@@ -1393,7 +1412,7 @@ input[type=search]:focus + .search-label {
 
 .loged {
   display: block;
-  padding: 11px 0 14px 47px;
+  padding: 12px 0 14px 47px;
 }
 
 .loged:hover,
@@ -1519,7 +1538,7 @@ input[type=search]:focus + .search-label {
   position: relative;
 
   flex-grow: 1;
-  padding-top: 13px;
+  padding-top: 12px;
   padding-bottom: 11px;
   padding-left: 44px;
 }
@@ -1527,7 +1546,7 @@ input[type=search]:focus + .search-label {
 .basket {
   position: relative;
 
-  padding: 13px 30px 11px 49px;
+  padding: 12px 30px 11px 49px;
 }
 
 a.sorting-down,
@@ -1552,7 +1571,7 @@ a.sorting-up:focus {
   content: "";
 
   position: absolute;
-  left: 18px;
+  left: 17px;
   top: 12px;
 
   width: 14px;
@@ -1649,7 +1668,7 @@ input::-moz-placeholder {
  }
 
 .header-bottom .container {
-  padding-top: 48px;
+  padding-top: 47px;
   padding-bottom: 58px;
   margin-right: auto;
   margin-left: auto;
@@ -1685,7 +1704,7 @@ input::-moz-placeholder {
 
 .block-top {
   display: flex;
-  padding-bottom: 66px ;
+  padding-bottom: 65px ;
 }
 
 .catalog-list {
@@ -1694,7 +1713,7 @@ input::-moz-placeholder {
   flex-wrap: wrap;
   justify-content: space-between;
   margin: 0;
-  margin-top: 20px;
+  margin-top: 19px;
 }
 
 
@@ -1725,8 +1744,8 @@ input::-moz-placeholder {
   display: block;
   min-height: 40px;
   padding: 0 25px;
-  margin-top: 10px;
-  margin-bottom: 13px;
+  margin-top: 11px;
+  margin-bottom: 12px;
 }
 
 .catalog-item .oldprice {
@@ -1742,9 +1761,9 @@ input::-moz-placeholder {
   width: 80px;
   margin: 0 auto;
   margin-bottom: 20px;
-  margin-top: 8px;
+  margin-top: 7px;
   padding: 10px 0;
-  padding-left: 29px;
+  padding-left: 28px;
   padding-right: 25px;
 
   color:white;
@@ -1794,7 +1813,7 @@ input[type="radio"].visually-hidden {
 }
 
 .block-top .container {
-  padding-top: 59px;
+  padding-top: 58px;
   width: 940px;
   margin-right: auto;
   margin-left: auto;
@@ -1879,6 +1898,8 @@ input[type="radio"].visually-hidden {
   width: 300px;
   padding-left: 7px;
   box-sizing: border-box;
+
+  cursor: pointer;
 }
 
 .firms-list {
@@ -1893,7 +1914,7 @@ input[type="radio"].visually-hidden {
 .service-block {
   position: relative;
 
-  margin-top: 70px;
+  margin-top: 68px;
   width: 940px;
   display: flex;
   flex-wrap: wrap;
@@ -1983,6 +2004,7 @@ input[type="radio"].visually-hidden {
 .footer-bottom .container {
   display: flex;
   justify-content: space-between;
+  padding-left: 14px;
 }
 
 .developed-by {
@@ -1993,8 +2015,17 @@ input[type="radio"].visually-hidden {
   margin-left: 6px;
 }
 
+.nav-first li:nth-child(4) {
+  padding-left: 2px;
+}
+
+.footer-social {
+  margin-right: 6px;
+}
+
 .footer-social ul {
   margin: 0;
+  margin-top: 1px;
   padding: 0;
   display: flex;
   justify-content: center;
@@ -2008,14 +2039,14 @@ input[type="radio"].visually-hidden {
 }
 
 .footer-bottom-right {
-  width: 305px;
+  width: 306px;
   display: flex;
   justify-content: space-between;
 }
 
 .map {
   display: block;
-  margin-top: 32px;
+  margin-top: 31px;
   margin-bottom: 37px;
 }
 
@@ -2188,10 +2219,10 @@ input[type="radio"].visually-hidden {
 
 .filter-btn {
   padding-left: 5px;
-  padding-top: 8px;
-  padding-bottom: 9px;
+  padding-top: 11px;
+  padding-bottom: 7px;
   width: 140px;
-  margin-top: 42px;
+  margin-top: 40px;
 
   font-family: "PT Sans", Arial, sans-serif;
   font-size: 13px;
@@ -2390,7 +2421,7 @@ input[type="radio"].visually-hidden {
 
 .modal-map {
   position: fixed;
-  bottom: 10px;
+  bottom: 100px;
   left: 50%;
   z-index: 80;
 
