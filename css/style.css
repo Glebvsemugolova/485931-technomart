@@ -1048,9 +1048,40 @@ input[type=search]:focus + .search-label {
   font-size: 14px;
   line-height: 18px;
 
-  border: 3px solid #63a63e;
   border-bottom-color: #367315;
   background-color: #63a63e;
+  border-radius: 3px;
+}
+
+.buy {
+  position: relative;
+
+  width: 135px;
+  padding-top: 10px;
+}
+
+.buy:before {
+  content: "";
+
+  position: absolute;
+  left: 13px;
+  top: 10px;
+
+  width: 15px;
+  height: 15px;
+
+  color: #ffffff;
+
+  background-image: url("../img/icon-cart.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  opacity: 0.3;
+
+}
+
+.buy:hover:before,
+.buy:focus:before {
+  opacity: 1;
 }
 
 .catalog-item .item-actions {
@@ -1126,6 +1157,7 @@ input[type=search]:focus + .search-label {
 .pagination-item button:hover,
 .pagination-item button:focus {
   border: 1px solid #bdc6ca;
+  outline: none;
 }
 
 .pagination-item button:active {
@@ -1157,13 +1189,13 @@ input[type=search]:focus + .search-label {
 .credit {
   background-image: url("../img/credit-bg.png");
   background-repeat: no-repeat;
-  background-position: right bottom;
+  background-position: right top;
 }
 
 .guarantee {
   background-image: url("../img/guarantee.png");
   background-repeat: no-repeat;
-  background-position: right bottom;
+  background-position: right top;
 }
 
 .social-btn {
@@ -2232,6 +2264,8 @@ input[type="radio"].visually-hidden {
   background-color: #ffffff;
   border: none;
   border: 1px solid #e5e5e5;
+
+  cursor: pointer;
 }
 
 .home {
@@ -2366,6 +2400,25 @@ input[type="radio"].visually-hidden {
   background-image: url("../img/checkbox-on.png");
   background-repeat: no-repeat;
   background-position: 0 0;
+
+  opacity: 0.8;
+}
+
+.filter-input-checkbox:disabled + label::before,
+.filter-input-checkbox:checked:disabled + label::after,
+.filter-input-checkbox:disabled + label,
+.filter-input-checkbox:checked:disabled + label {
+  opacity: 0.4;
+}
+
+.filter-input-checkbox:hover + label::before,
+.filter-input-checkbox:focus + label::before{
+  opacity: 0.8;
+}
+
+.filter-input-checkbox:checked:hover + label::after,
+.filter-input-checkbox:checked:focus + label::after{
+  opacity: 1;
 }
 
 .filter-input-radio + label::before {
@@ -2397,6 +2450,25 @@ input[type="radio"].visually-hidden {
   background-image: url("../img/radio-on.png");
   background-repeat: no-repeat;
   background-position: 0 0;
+
+  opacity: 0.8;
+}
+
+.filter-input-radio:disabled + label::before,
+.filter-input-radio:checked:disabled + label::after,
+.filter-input-radio:disabled + label,
+.filter-input-radio:checked:disabled + label {
+  opacity: 0.4;
+}
+
+.filter-input-radio:hover + label::before,
+.filter-input-radio:focus + label::before{
+  opacity: 0.8;
+}
+
+.filter-input-radio:checked:hover + label::after,
+.filter-input-radio:checked:focus + label::after{
+  opacity: 1;
 }
 
 .service-btn.checked {
@@ -2500,7 +2572,7 @@ input[type="radio"].visually-hidden {
   position: absolute;
   z-index: 20;
   left: 107px;
-  top: 56px;
+  top: 59px;
   width: 4px;
   height: 4px;
 
@@ -2518,6 +2590,7 @@ input[type="radio"].visually-hidden {
 
 .add-product-active {
   display: block;
+
   animation-name: bounce;
   animation-duration: 0.7s;
 }
@@ -2534,3 +2607,4 @@ input[type="radio"].visually-hidden {
   animation-name: shake;
   animation-duration: 0.7s;
 }
+
