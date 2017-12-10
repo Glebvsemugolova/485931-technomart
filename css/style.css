@@ -325,7 +325,7 @@ input[type=search]:focus + .search-label {
 
 .logo:hover,
 .footer-logo:hover {
-  background-color: #ca2c37;  <!-- Фокус_добавить? -->
+  background-color: #ca2c37;
 }
 
 .logo:active,
