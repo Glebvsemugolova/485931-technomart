@@ -17,7 +17,7 @@
 @font-face {
   font-family: 'Cuprum';
   src: url('../fonts/cuprumbolditalic.woff2') format('woff2'),
-  url('../fonts/web/cuprumbolditalic.woff') format('woff');
+  url('../fonts/cuprumbolditalic.woff') format('woff');
   font-weight: bold;
   font-style: italic;
 }
@@ -213,7 +213,7 @@ input[type=search]:focus + .search-label {
   display: flex;
   margin: 0;
   padding: 0;
-  margin-bottom: 19px;
+  margin-bottom: 15px;
 
   font-family: "PT Sans", Arial, sans-serif;
   font-size: 13px;
@@ -603,11 +603,13 @@ input[type=search]:focus + .search-label {
   padding-top: 26px;
   padding-left: 24px;
 
+  background-color: #9d8b77;
   background-image: url("../img/slide-1.jpg");
   background-repeat: no-repeat;
 }
 
 .slide:nth-child(2) {
+  background-color: #452c28;
   background-image: url("../img/slide-2.jpg");
   background-repeat: no-repeat;
 
@@ -648,7 +650,7 @@ input[type=search]:focus + .search-label {
 .service-delivery {
   background-image: url("../img/delivery.png");
   background-repeat: no-repeat;
-  background-position: right bottom;
+  background-position: right 1px top 19px;
 }
 
 .sales {
@@ -731,7 +733,6 @@ input[type=search]:focus + .search-label {
 
 .block-middle {
   display: flex;
-  padding-bottom: 101px;
   padding-top: 68px;
 
   background-color: #f4f8f9;
@@ -1497,7 +1498,6 @@ input[type=search]:focus + .search-label {
 
   position: absolute;
   left: -30px;
-  top: -10px;
 
   width: 20px;
   height: 18px;
@@ -1586,6 +1586,8 @@ input[type=search]:focus + .search-label {
 a.sorting-down,
 a.sorting-up {
   color: #c5c5c5;
+
+  font-size: 0;
 
   border: none;
 }
@@ -1977,15 +1979,12 @@ input[type="radio"].visually-hidden {
 
   margin: 0;
   padding: 0;
+  padding-top: 5px;
 }
 
 .page {
-  position: absolute;
-  top: 5px;
-  left: 0;
-
   display: none;
-  min-height: 280px;
+  min-height: 267px;
   margin: 0;
   padding: 0;
   width: 619px;
@@ -2055,6 +2054,8 @@ input[type="radio"].visually-hidden {
 
 .footer-social {
   margin-right: 6px;
+
+  font-size: 0;
 }
 
 .footer-social ul {
@@ -2118,6 +2119,12 @@ input[type="radio"].visually-hidden {
 
 .sorting-down {
   margin-left: 20px;
+}
+
+.sorting-down,
+.sorting-up {
+  display: block;
+  margin-top: 10px;
 }
 
 .filters-title h2 {
@@ -2272,6 +2279,11 @@ input[type="radio"].visually-hidden {
 
 .home {
   color: #c1c6ce;
+}
+
+.breadcrumbs .home,
+.user .exit {
+  font-size: 0;
 }
 
 .crumb {
